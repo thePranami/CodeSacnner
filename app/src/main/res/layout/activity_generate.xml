@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.webrication.qr.code.reader.generator.scanner.GenerateActivity">
+
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:id="@+id/appbar">
+
+    <include
+        layout="@layout/generate_toolbar">
+    </include>
+
+</android.support.design.widget.AppBarLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel"
+    android:layout_above="@+id/frame"
+    android:layout_below="@+id/appbar">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/generate_text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="18dp"
+        android:singleLine="true"
+        android:layout_marginTop="40dp"
+        android:hint="Enter text to generate QR Code"
+        />
+    
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/generate_image"
+        android:scaleType="fitXY"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/generate_text"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Generate"
+            android:id="@+id/generate"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:visibility="visible"
+            android:textColor="#fff"
+            android:background="@color/color_code"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Save To Photos"
+            android:id="@+id/save"
+            android:textAllCaps="false"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:visibility="gone"
+            android:background="@color/color_code"
+            />
+    </FrameLayout>
+
+</RelativeLayout>

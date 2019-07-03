@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.webrication.qr.code.reader.generator.scanner.ScanResultActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool_result">
+
+
+        <include
+            layout="@layout/scanresult_toolbar"></include>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:paddingTop="20dp"
+        android:layout_below="@+id/tool_result"
+        android:id="@+id/details">
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/view22"
+        android:layout_below="@+id/details"
+        android:background="#b3b3ae"/>
+
+       <android.support.v7.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_below="@+id/view22"
+           android:layout_height="match_parent"
+           android:id="@+id/recycler">
+
+       </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

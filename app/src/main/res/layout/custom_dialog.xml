@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <android.support.v7.widget.CardView
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardElevation="5dp"
+      app:cardCornerRadius="5dp"
+      >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please select a picture"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:background="#fff"
+        android:id="@+id/text_content"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#c8c8ca"
+        android:id="@+id/view"
+        android:layout_below="@+id/text_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/view"
+        android:text="Take a photo"
+        android:textSize="18dp"
+        android:id="@+id/camera"
+        android:textColor="@color/color_code"
+        android:textAllCaps="false"
+        android:background="#fff"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c8c8ca"
+        android:id="@+id/view2"
+        android:layout_below="@+id/camera"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/view2"
+        android:text="Choose from album"
+        android:textSize="18dp"
+        android:id="@+id/album"
+        android:textColor="@color/color_code"
+        android:textAllCaps="false"
+        android:background="#fff"/>
+    </RelativeLayout>
+
+  </android.support.v7.widget.CardView>

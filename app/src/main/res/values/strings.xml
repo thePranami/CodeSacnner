@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">QR Code Reader,Scanner and Generator</string>
+
+    <string name="toggle_flash">Flash</string>
+    <string name="flash_on">Flash [ON]</string>
+    <string name="flash_off">Flash [OFF]</string>
+    <string name="auto_focus_on">Auto Focus [ON]</string>
+    <string name="auto_focus_off">Auto Focus [OFF]</string>
+    <string name="formats">Formats</string>
+    <string name="choose_formats">Choose Formats</string>
+    <string name="select_camera">Select a Camera</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+
+
+    <string name="permission_camera"> QRscanner Would like to access the Camera</string>
+    <string name="permission_camera_msg">This allows QR scanner to let you click pictures to share. Click to setting to enable.</string>
+
+    <string name="permission_Storage">QR scanner Would like to access the Storage</string>
+    <string name="permission_Storage_msg">This allows QR scanner to let access your storage. Click to setting to enable.</string>
+
+
+    <string name="permission_call"> QR Would like to access the Call</string>
+    <string name="permission_call_msg">This allows QR  to let you call . Click to setting to enable.</string>
+
+    <string name="permission_contacts">QR scanner Would like to access the contacts</string>
+    <string name="permission_contacts_msg">This allows QR scanner to let access your contacts. Click to setting to enable.</string>
+
+
+    <string name="permission_calendar"> QRscanner Would like to access the Calendar</string>
+    <string name="permission_calendar_msg">This allows QR scanner to let access calendar. Click to setting to enable.</string>
+
+
+</resources>
